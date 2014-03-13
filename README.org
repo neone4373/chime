@@ -1,5 +1,7 @@
 * Chime
 
+This library is a shameless fork from James Henderson's excellent library `https://github.com/james-henderson/chime`, the only change is in-millis is reverted to in-msecs to reflect the clj-time<'0.5.0' used in Storm.
+
 Chime is a *really* lightweight Clojure scheduler.
 
 ** Dependency
@@ -7,7 +9,7 @@ Chime is a *really* lightweight Clojure scheduler.
 Add the following to your =project.clj= file:
 
 #+BEGIN_SRC clojure
-  [jarohen/chime "0.1.5"]
+  [neone4373/chime "0.1.5-for-storm"]
 #+END_SRC
 
 ** The ‘Big Idea’™ behind Chime
