@@ -7,7 +7,7 @@
 (defn- ms-between [start end]
   (if (t/before? end start)
     0
-    (-> (t/interval start end) (t/in-millis))))
+    (-> (t/interval start end) (t/in-msecs))))
 
 (defn chime-ch
   "Returns a core.async channel that 'chimes' at every time in the
